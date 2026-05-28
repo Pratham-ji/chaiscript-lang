@@ -2,12 +2,25 @@
 build/
 *.out
 *.o
+*.obj
+*.pdb
+*.exe
 
-# Generated C output
+# Generated C output and compiled binaries
 examples/*.c
+examples/hello_chai
+examples/fibonacci
+examples/calculator
+examples/loops_demo
+examples/scope_demo
+examples/error_demo
 
 # IDE and OS
 .vscode/
+.idea/
 .cache/
 .DS_Store
+*.swp
+*.swo
+*~
 compile_commands.json

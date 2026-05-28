@@ -1,0 +1,19 @@
+// Test: lexical scoping and variable shadowing
+garam_kar {
+    chai chini x = 1;
+    serve(x);
+
+    {
+        chai chini x = 2;
+        serve(x);
+        {
+            chai chini x = 3;
+            serve(x);
+        }
+        serve(x);
+    }
+
+    serve(x);
+
+    peelo 0;
+}

@@ -1,0 +1,25 @@
+// Scope Demo — demonstrating lexical scoping and variable shadowing
+garam_kar {
+    chai chini x = 10;
+    serve(x);
+
+    // Inner scope: x is shadowed
+    {
+        chai chini x = 99;
+        serve(x);
+
+        // Even deeper nesting
+        {
+            chai chini x = 42;
+            serve(x);
+        }
+
+        // Back to inner scope's x
+        serve(x);
+    }
+
+    // Back to outer scope's original x
+    serve(x);
+
+    peelo 0;
+}

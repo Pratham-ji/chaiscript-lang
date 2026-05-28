@@ -1,0 +1,17 @@
+// Fibonacci — iterative computation of the first 10 Fibonacci numbers
+garam_kar {
+    chai chini a = 0;
+    chai chini b = 1;
+    chai chini count = 10;
+    chai chini i = 0;
+
+    ubalo_jab_tak (i < count) {
+        serve(a);
+        chai chini temp = a + b;
+        a = b;
+        b = temp;
+        i = i + 1;
+    }
+
+    peelo 0;
+}

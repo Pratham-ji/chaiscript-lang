@@ -1,0 +1,27 @@
+// Test: boolean values and conditional logic
+garam_kar {
+    chai elaichi flag = kadak;
+    chai elaichi off = fika;
+
+    agar (flag) {
+        serve("flag is kadak");
+    }
+
+    agar (off) {
+        serve("should not print");
+    } warna {
+        serve("off is fika");
+    }
+
+    // Comparison returning boolean used in condition
+    chai chini val = 42;
+    agar (val == 42) {
+        serve("the answer");
+    }
+
+    agar (val != 99) {
+        serve("not ninety-nine");
+    }
+
+    peelo 0;
+}

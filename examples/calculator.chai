@@ -1,0 +1,33 @@
+// Calculator — demonstrating operator precedence and complex arithmetic
+garam_kar {
+    chai chini a = 10;
+    chai chini b = 3;
+    chai chini c = 7;
+
+    // Precedence test: * and / bind tighter than + and -
+    // Expected: 10 + 3 * 7 = 10 + 21 = 31
+    chai chini result1 = a + b * c;
+    serve(result1);
+
+    // Parenthesized grouping overrides precedence
+    // Expected: (10 + 3) * 7 = 13 * 7 = 91
+    chai chini result2 = (a + b) * c;
+    serve(result2);
+
+    // Chained arithmetic
+    // Expected: 10 * 3 - 7 + 2 = 30 - 7 + 2 = 25
+    chai chini result3 = a * b - c + 2;
+    serve(result3);
+
+    // Division (integer)
+    // Expected: 10 / 3 = 3  (integer division)
+    chai chini result4 = a / b;
+    serve(result4);
+
+    // Comparison results used in conditionals
+    agar (result1 > result4) {
+        serve("Precedence works correctly!");
+    }
+
+    peelo 0;
+}

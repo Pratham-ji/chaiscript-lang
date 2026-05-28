@@ -1,0 +1,23 @@
+// Test: basic arithmetic and operator precedence
+garam_kar {
+    chai chini a = 2;
+    chai chini b = 3;
+    chai chini c = 4;
+
+    // 2 + 3 = 5
+    serve(a + b);
+
+    // 3 * 4 = 12
+    serve(b * c);
+
+    // 2 + 3 * 4 = 2 + 12 = 14 (precedence)
+    serve(a + b * c);
+
+    // (2 + 3) * 4 = 5 * 4 = 20
+    serve((a + b) * c);
+
+    // 12 / 4 = 3
+    serve(b * c / c);
+
+    peelo 0;
+}

@@ -1,0 +1,22 @@
+// Test: if-else conditional branching
+garam_kar {
+    chai chini x = 10;
+
+    agar (x > 5) {
+        serve("x is big");
+    } warna {
+        serve("x is small");
+    }
+
+    agar (x == 10) {
+        serve("exactly ten");
+    }
+
+    agar (x < 5) {
+        serve("should not print");
+    } warna {
+        serve("correct branch");
+    }
+
+    peelo 0;
+}

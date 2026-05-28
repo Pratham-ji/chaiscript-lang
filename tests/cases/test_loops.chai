@@ -1,0 +1,21 @@
+// Test: while loops with counting and accumulation
+garam_kar {
+    chai chini i = 1;
+    chai chini sum = 0;
+
+    // Sum 1..5 = 15
+    ubalo_jab_tak (i <= 5) {
+        sum = sum + i;
+        i = i + 1;
+    }
+    serve(sum);
+
+    // Countdown from 3
+    chai chini n = 3;
+    ubalo_jab_tak (n > 0) {
+        serve(n);
+        n = n - 1;
+    }
+
+    peelo 0;
+}

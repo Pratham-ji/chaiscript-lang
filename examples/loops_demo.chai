@@ -1,0 +1,21 @@
+// Loops Demo — counting down and computing factorials with ubalo_jab_tak
+garam_kar {
+    // Countdown from 5
+    chai chini count = 5;
+    ubalo_jab_tak (count > 0) {
+        serve(count);
+        count = count - 1;
+    }
+
+    // Compute 7! (factorial) iteratively
+    chai chini n = 7;
+    chai chini factorial = 1;
+    chai chini i = 1;
+    ubalo_jab_tak (i <= n) {
+        factorial = factorial * i;
+        i = i + 1;
+    }
+    serve(factorial);
+
+    peelo 0;
+}
