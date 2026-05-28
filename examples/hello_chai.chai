@@ -1,0 +1,28 @@
+// A fresh cup of ChaiScript — the classic hello world
+garam_kar {
+    chai chini cups = 3;
+    chai adrak greeting = "Namaste, duniya!";
+    chai elaichi is_hot = kadak;
+
+    // Serve the greeting
+    serve(greeting);
+
+    // Arithmetic with proper precedence (* before +)
+    chai chini total = cups + 2;
+    serve(total);
+
+    // Conditional branching
+    agar (cups > 2) {
+        serve("Bahut chai pi li!");
+    } warna {
+        serve("Aur chai lao!");
+    }
+
+    // Loop: count down the cups
+    ubalo_jab_tak (cups > 0) {
+        serve(cups);
+        cups = cups - 1;
+    }
+
+    peelo 0;
+}

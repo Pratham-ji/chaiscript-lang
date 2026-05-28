@@ -1,0 +1,15 @@
+// Edge case test: type errors and semantic errors
+// This file is designed to FAIL compilation and demonstrate error handling.
+
+garam_kar {
+    chai chini x = 10;
+    chai adrak name = "Pratham";
+
+    // Type Error: Cannot mix adrak and chini
+    chai chini bad = x + name;
+
+    // Semantic Error: Undeclared variable
+    serve(ghost_var);
+
+    peelo 0;
+}
